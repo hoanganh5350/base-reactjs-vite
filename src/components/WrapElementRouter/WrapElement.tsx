@@ -1,7 +1,7 @@
 import { ProtectedRoute } from "../../components/ProtectedRoute/ProtectedRoute";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import { ELayout } from "../types/layout";
-import { UserRole } from "../types/user";
+import { ELayout } from "../../utils/types/layout";
+import { UserRole } from "../../utils/types/user";
 import { memo, ReactElement, useCallback } from "react";
 
 interface TypeWrapElementProps {
@@ -18,7 +18,7 @@ export const WrapElement: React.MemoExoticComponent<
   const renderWithLayout = useCallback(() => {
     switch (layout) {
       case ELayout.MAIN_LAYOUT: {
-        return <MainLayout>{element}</MainLayout>;
+        return <MainLayout />;
       }
       default: {
         return element;

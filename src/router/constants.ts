@@ -16,11 +16,6 @@ export type RouteItem = {
   authenticator?: boolean;
   role?: UserRole[];
   layout?: ELayout;
-  children?: RouteItem[];
-};
-
-export type NestedRoute = RouteItem & {
-  children?: NestedRoute[];
 };
 
 export type FlatRoutePath = (typeof ROUTES)[keyof typeof ROUTES];

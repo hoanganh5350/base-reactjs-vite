@@ -4,27 +4,25 @@ import { nestRoutesByPath } from "../utils/router/nestRoutesByPath";
 import { ELayout } from "../utils/types/layout";
 import { UserRole } from "../utils/types/user";
 import { ROUTES, type RouteItem } from "./constants";
-// import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const flatRoutes: RouteItem[] = [
   {
     path: "/",
-    element: <DashboardView />,
+    element: <Navigate to={ROUTES.DASHBOARD} replace />,
   },
   {
     path: ROUTES.LOGIN,
-    element: <Dashboard />,
+    element: <>Login</>,
   },
   {
     path: ROUTES.DASHBOARD,
     element: <Dashboard />,
     layout: ELayout.MAIN_LAYOUT,
-    authenticator: true,
-    role: [UserRole.ADMIN, UserRole.EDITOR],
   },
   {
     path: ROUTES.DASHBOARD_VIEW,
-    element: <>DashboardView</>,
+    element: <DashboardView />,
     layout: ELayout.MAIN_LAYOUT,
     authenticator: true,
     role: [UserRole.ADMIN, UserRole.VIEWER],
@@ -44,7 +42,5 @@ const flatRoutes: RouteItem[] = [
     role: [UserRole.ADMIN, UserRole.VIEWER],
   },
 ];
-
-console.log(nestRoutesByPath(flatRoutes));
 
 export const nestedRoutes = nestRoutesByPath(flatRoutes);
