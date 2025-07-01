@@ -7,7 +7,7 @@ type IconProps = {
   className?: string;
 };
 
-const Icon: React.FC<IconProps> = ({ iconName, size = 24, className }) => {
+export const Icon: React.FC<IconProps> = ({ iconName, size = 24, className }) => {
   const icon = iconConfig[iconName];
 
   if (!icon) return null;
@@ -32,5 +32,3 @@ const Icon: React.FC<IconProps> = ({ iconName, size = 24, className }) => {
     </svg>
   );
 };
-
-export default Icon;

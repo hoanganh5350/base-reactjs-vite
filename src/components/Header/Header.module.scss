@@ -1,0 +1,38 @@
+.containerHeader {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  padding: 0 20px;
+}
+
+.react {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+}
+
+.textReact {
+  font-size: 22px;
+  font-weight: 600;
+  color: #00D8FF;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoReact {
+  animation: logo-spin infinite 10s linear;
+}

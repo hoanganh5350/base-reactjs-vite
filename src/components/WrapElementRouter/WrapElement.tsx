@@ -18,7 +18,7 @@ export const WrapElement: React.MemoExoticComponent<
   const renderWithLayout = useCallback(() => {
     switch (layout) {
       case ELayout.MAIN_LAYOUT: {
-        return <MainLayout />;
+        return <MainLayout>{element}</MainLayout>;
       }
       default: {
         return element;
