@@ -18,12 +18,17 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+html {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  height: 100%;
+}
+
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -45,10 +50,6 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -61,12 +62,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.Toastify__toast {
-  font-size: 12px !important;
-}
-
-button:focus {
-  outline: none !important;
 }

@@ -1,4 +1,9 @@
+import styles from "./DashboardView.module.scss";
+
+
 export const DashboardView = () => {
-  console.log('vao day');
-  return <div>DASHBOARD VIEW PAGE</div>;
-}
+  return (
+    <div className={styles.containerDashboardView}>
+    </div>
+  );
+};
