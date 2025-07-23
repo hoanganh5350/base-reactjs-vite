@@ -1,5 +1,6 @@
 import styles from "./Header.module.scss";
 import reactLogo from "./../../assets/react.svg";
+import { Extend } from "./Extend";
 
 export const Header = () => {
   return (
@@ -9,6 +10,7 @@ export const Header = () => {
           <img src={reactLogo} className={styles.logoReact} alt="React logo" />
           <div className={styles.textReact}>ReactJS</div>
         </a>
+        <Extend />
       </div>
     </div>
   );

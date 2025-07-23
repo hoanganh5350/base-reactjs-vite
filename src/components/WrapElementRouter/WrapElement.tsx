@@ -1,4 +1,5 @@
 import { ProtectedRoute } from "../../components/ProtectedRoute/ProtectedRoute";
+import LayoutTrading from "../../layouts/LayoutTrading/LayoutTrading";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
 import { ELayout } from "../../utils/types/layout";
 import { UserRole } from "../../utils/types/user";
@@ -19,6 +20,9 @@ export const WrapElement: React.MemoExoticComponent<
     switch (layout) {
       case ELayout.MAIN_LAYOUT: {
         return <MainLayout>{element}</MainLayout>;
+      }
+      case ELayout.LAYOUT_TRADING_VIEW: {
+        return <LayoutTrading>{element}</LayoutTrading>;
       }
       default: {
         return element;

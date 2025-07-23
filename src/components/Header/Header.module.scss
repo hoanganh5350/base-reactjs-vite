@@ -5,10 +5,14 @@
   width: 100%;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.15);
   z-index: 1;
+  background-color: rgb(31, 30, 43);
+  color: white;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   padding: 0 20px;
 }
 
@@ -21,7 +25,7 @@
 .textReact {
   font-size: 22px;
   font-weight: 600;
-  color: #00D8FF;
+  color: #00d8ff;
 }
 
 @keyframes logo-spin {
@@ -35,4 +39,24 @@
 
 .logoReact {
   animation: logo-spin infinite 10s linear;
+}
+
+.containerExtend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconHeader {
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionLang {
+  display: flex;
+  align-items: center;
+  gap: 10px
 }

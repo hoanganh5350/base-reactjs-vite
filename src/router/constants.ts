@@ -8,6 +8,7 @@ export const ROUTES = {
   DASHBOARD_VIEW: "/dashboard/view",
   DASHBOARD_VIEW_MODEL: "/dashboard/view/model",
   DASHBOARD_VIEW_MODEL_CONTROLLER: "/dashboard/view/model/controller",
+  TRADING_VIEW: "/trading_view"
 } as const;
 
 export type RouteItem = {

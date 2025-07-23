@@ -4,6 +4,7 @@ import {
   DesktopOutlined,
   ContainerOutlined,
   AppstoreOutlined,
+  LineChartOutlined,
 } from "@ant-design/icons";
 import { ROUTES } from "../../router/constants";
 
@@ -29,5 +30,10 @@ export const menuItem: ItemType[] = [
         label: "Dashboard View Model sdsdfsdfsdfsd",
       },
     ],
+  },
+  {
+    key: ROUTES.TRADING_VIEW,
+    icon: <LineChartOutlined />,
+    label: "Trading View",
   },
 ];
