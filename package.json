@@ -13,9 +13,13 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
+    "ag-grid-community": "^34.0.2",
+    "ag-grid-react": "^34.0.2",
     "antd": "^5.25.4",
     "axios": "^1.10.0",
     "dockview": "^4.5.0",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
     "formik": "^2.4.6",
     "jwt-decode": "^4.0.0",
     "lodash": "^4.17.21",

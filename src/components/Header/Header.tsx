@@ -8,7 +8,7 @@ export const Header = () => {
       <div className={styles.header}>
         <a href="https://react.dev" className={styles.react} target="_blank">
           <img src={reactLogo} className={styles.logoReact} alt="React logo" />
-          <div className={styles.textReact}>ReactJS</div>
+          <div className={styles.textReact}>ReactJS Demo</div>
         </a>
         <Extend />
       </div>

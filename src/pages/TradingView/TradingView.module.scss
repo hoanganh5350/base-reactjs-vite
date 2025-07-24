@@ -17,3 +17,44 @@ div[class="dv-grid-view dv-dockview"] {
   height: 100% !important;
   width: 100% !important;
 }
+
+.outLineAddMorePanel {
+  height: 100%;
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+
+.addMorePanel {
+  color: white;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: none !important;
+}
+
+.toolBarGroup {
+  height: 100%;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  color: white;
+}
+
+.outLineIconToolBar {
+  height: 100%;
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+
+.iconToolBar {
+  color: white;
+  height: 26px;
+  padding: 6px;
+  cursor: pointer;
+  border: none !important;
+  &:hover {
+    background-color: rgb(45, 45, 45) !important;
+  }
+}
