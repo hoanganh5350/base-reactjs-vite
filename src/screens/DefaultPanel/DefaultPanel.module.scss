@@ -1,19 +1,19 @@
-.containerTradingView {
+.containerDefaultPanel {
   width: 100%;
   height: 100%;
 }
 
-.chartView {
-  width: 100%;
-  height: 100%;
+.containerListAddScreen {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-items: center;
+  align-items: center;
+  color: white;
 }
 
-.imageChart {
-  width: 100%;
-  height: 100%;
-}
-
-div[class="dv-grid-view dv-dockview"] {
-  height: 100% !important;
-  width: 100% !important;
+.buttonAddScreen {
+  width: 250px;
+  background-color: rgb(114, 114, 114);
 }
