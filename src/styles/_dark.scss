@@ -1,5 +1,12 @@
 :root[data-theme="dark"] {
-  --color-primary: #3399ff;
-  --color-background: #000000;
-  --color-text: #ffffff;
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-text-60: rgba(255, 255, 255, 0.6);
+  --color-text-38: rgba(255, 255, 255, 0.38);
+  --background: #121212;
+  --background-panel: #222222;
+  --border: rgba(255, 255, 255, 0.09);
+  --primary: #2673dd;
+  --warning: #B28400;
+  --error: #AB2830;
+  --success: #309053;
 }

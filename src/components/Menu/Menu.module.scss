@@ -8,12 +8,20 @@
   width: fit-content;
   position: relative;
   box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.2);
+  background: var(--background-panel);
 
-  > ul {
+  ul {
     border-inline-end: none !important;
     overflow: hidden;
     overflow-y: scroll;
+    background: var(--background-panel) !important;
+    color: var(--color-text) !important;
   }
+  // li {
+  //   background: var(--background-panel) !important;
+  //   color: var(--color-text) !important;
+  // }
+
   ::-webkit-scrollbar {
     width: 4px;
     border-radius: 4px;

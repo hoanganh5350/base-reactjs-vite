@@ -1,5 +1,12 @@
 :root[data-theme="light"] {
-  --color-primary: #0055ff;
-  --color-background: #ffffff;
-  --color-text: #000000;
+  --color-text: rgba(0, 0, 0, 0.87);
+  --color-text-60: rgba(0, 0, 0, 0.6);
+  --color-text-38: rgba(0, 0, 0, 0.38);
+  --background: #F0F2F5;
+  --background-panel: #FAFAFA;
+  --border: #EBEBEB;
+  --primary: #2673DD;
+  --warning: #FFBB00;
+  --error: #EE2C4A;
+  --success: #44CC77;
 }

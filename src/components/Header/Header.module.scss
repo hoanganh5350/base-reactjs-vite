@@ -5,8 +5,8 @@
   width: 100%;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.15);
   z-index: 1;
-  background-color: rgb(31, 30, 43);
-  color: white;
+  background: var(--background-panel);
+  color: var(--color-text);
 }
 
 .header {
