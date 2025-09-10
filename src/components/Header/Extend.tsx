@@ -8,7 +8,7 @@ import {
 } from "@ant-design/icons";
 import VNFlag from "./../../assets/VNFlag.svg";
 import USFlag from "./../../assets/USFlag.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { setThemeSystem } from "../../utils/theme/theme";
 
 const optionLang = [
@@ -64,9 +64,11 @@ export const Extend = () => {
   const [lang, setLang] = useState("en");
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
-  useEffect(() => {
+  const handleSetTheme = (theme: "light" | "dark") => {
+    setTheme(theme);
     setThemeSystem(theme);
-  }, [theme]);
+  };
+
   return (
     <div className={styles.containerExtend}>
       <SelectPopover
@@ -84,7 +86,7 @@ export const Extend = () => {
             {theme === "light" ? <SunOutlined /> : <MoonOutlined />}
           </div>
         }
-        onSelect={(e) => setTheme(e.value as "light" | "dark")}
+        onSelect={(e) => handleSetTheme(e.value as "light" | "dark")}
         options={optionTheme}
       />
       <SelectPopover

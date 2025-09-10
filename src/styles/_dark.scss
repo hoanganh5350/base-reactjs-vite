@@ -1,5 +1,5 @@
-.theme-dark {
-  --color-bg: #1e1e1e;
+:root[data-theme="dark"] {
+  --color-primary: #3399ff;
+  --color-background: #000000;
   --color-text: #ffffff;
-  --color-primary: #00b96b;
 }
